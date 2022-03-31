@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body background = "https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/sound2.jpg?v=1647741876971" >
+    <!-- this is the start of content -->
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/mixkit-game-show-suspense-waiting-667.wav?v=1648173301501" id="audio1"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/button2.wav?v=1648176855584 " id="audio2"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/button3.wav?v=1648176860057" id="audio3"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/button4.wav?v=1648176863783" id="audio4"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/button5.wav?v=1648176866623" id="audio5"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/button6.wav?v=1648176870405" id="audio6"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/gameover.wav?v=1648655689984" id="gameOver"></audio>
+     <audio src="https://cdn.glitch.global/873d2c4c-6d02-4c50-8237-92fa49561dfe/wingame.wav?v=1648655671631" id="win"></audio>
+    
+     
+    <h1>
+    Lit Mind!
+    </h1>
+    <p>
+      Welcome ! Repeat the Pattern to Win the Game , You have three attempts.Have fun! 
+    </p>
+    <button id="startBtn" onclick ="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class = "hidden" onclick="stopGame()">
+      End
+    </button>
+     
+    <div id = "gameButtonArea">
+    
+       <button id = "button1" onclick= "guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+       <button id = "button2" onclick= "guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()" ></button>
+       <button id = "button3" onclick= "guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+       <button id = "button4" onclick= "guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+       <button id = "button5" onclick= "guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id =  "button6" onclick= "guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      
+    </div>
+  
+  </body>
+</html>
